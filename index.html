@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="A weekly group for dads of children birth through elementary age, Thursday evenings at Grace Community Church in North Liberty. All dads welcome, no church membership required.">
 <title>Fatherhood Together</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <style>
   :root {
     --bg: #faf7f2;
@@ -32,6 +33,18 @@
     padding: 4rem 1.5rem 3rem;
     text-align: center;
   }
+  .logo {
+    width: 92px;
+    height: 92px;
+    margin: 0 auto 1rem;
+    display: block;
+  }
+  .logo .ring { fill: none; stroke: var(--accent); stroke-width: 2; opacity: 0.5; }
+  .logo .head-adult, .logo .body-adult { fill: var(--accent-dark); }
+  .logo .head-child, .logo .body-child { fill: var(--accent); }
+  .logo .hand { fill: none; stroke: var(--accent-dark); stroke-width: 2.5; stroke-linecap: round; }
+  .logo .stem { stroke: var(--accent-dark); stroke-width: 2; stroke-linecap: round; }
+  .logo .leaf { fill: var(--accent); }
   header h1 {
     font-size: 2.4rem;
     margin: 0 0 0.5rem;
@@ -88,6 +101,17 @@
 </head>
 <body>
 <header>
+  <svg class="logo" viewBox="0 0 100 100" role="img" aria-label="Fatherhood Together logo: a father and child holding hands beside a growing sprout">
+    <circle class="ring" cx="50" cy="50" r="46"/>
+    <path class="hand" d="M46,58 Q54,63 60,60"/>
+    <path class="body-adult" d="M20,68 C20,50 52,50 52,68 Z"/>
+    <circle class="head-adult" cx="36" cy="35" r="9"/>
+    <path class="body-child" d="M50,72 C50,60 74,60 74,72 Z"/>
+    <circle class="head-child" cx="62" cy="47" r="6.5"/>
+    <line class="stem" x1="50" y1="90" x2="50" y2="79"/>
+    <path class="leaf" d="M50,79 C45,74 39,77 42,82 C45,86 50,83 50,79 Z"/>
+    <path class="leaf" d="M50,79 C55,75 61,78 58,83 C55,87 50,83 50,79 Z"/>
+  </svg>
   <h1>Fatherhood Together</h1>
   <p>A newly forming group for dads of children birth through elementary school age, meeting Thursday evenings at Grace Community Church in North Liberty. You do not need to attend or be a member of Grace to join us.</p>
 </header>
