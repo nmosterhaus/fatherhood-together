@@ -12,13 +12,15 @@
     --text: #1c2430;
     --accent: #b8863b;
     --accent-dark: #1f3a5f;
+    --details-bg: #ede5d7;
   }
   @media (prefers-color-scheme: dark) {
     :root {
       --bg: #171b22;
       --text: #eef1f6;
       --accent: #d9ad6a;
-      --accent-dark: #7fa0c9;
+      --accent-dark: #9ec4f0;
+      --details-bg: #364559;
     }
   }
   * { box-sizing: border-box; }
@@ -57,7 +59,7 @@
     padding-bottom: 0.3rem;
   }
   .details {
-    background: color-mix(in srgb, var(--accent) 12%, var(--bg));
+    background: var(--details-bg);
     border: 1px solid var(--accent);
     border-radius: 8px;
     padding: 1.25rem 1.5rem;
