@@ -35,9 +35,20 @@
     padding: 4rem 1.5rem 3rem;
     text-align: center;
   }
-  header h1 {
-    font-size: 2.4rem;
-    margin: 0 0 0.5rem;
+  .wordmark {
+    display: inline-block;
+    margin: 0 0 1.25rem;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-weight: 500;
+    font-size: clamp(2.25rem, 8vw, 3.5rem);
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+    text-align: left;
+    color: var(--text);
+  }
+  .wordmark span { display: block; }
+  .wordmark span:last-child {
+    text-align: right;
     color: var(--accent-dark);
   }
   header p {
@@ -85,7 +96,10 @@
 </head>
 <body>
 <header>
-  <h1>Fatherhood Together</h1>
+  <h1 class="wordmark">
+    <span>Fatherhood</span>
+    <span>Together</span>
+  </h1>
   <p>A newly forming group for dads of children birth through elementary school age, meeting Thursday evenings at Grace Community Church in North Liberty. You do not need to attend or be a member of Grace to join us.</p>
 </header>
 <main>
