@@ -13,6 +13,8 @@
     --accent: #b8863b;
     --accent-dark: #1f3a5f;
     --details-bg: #ede5d7;
+    --bracket: #8a8a85;
+    --muted: #5f5e5a;
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -21,6 +23,8 @@
       --accent: #d9ad6a;
       --accent-dark: #9ec4f0;
       --details-bg: #364559;
+      --bracket: #8b93a0;
+      --muted: #aab2bf;
     }
   }
   * { box-sizing: border-box; }
@@ -36,20 +40,23 @@
     text-align: center;
   }
   .wordmark {
-    display: inline-block;
-    margin: 0 0 1.25rem;
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    font-weight: 500;
-    font-size: clamp(2.25rem, 8vw, 3.5rem);
-    line-height: 0.95;
-    letter-spacing: -0.03em;
-    text-align: left;
+    margin: 0;
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+    font-weight: 400;
+    font-size: clamp(1.1rem, 4.5vw, 1.75rem);
+    text-align: center;
+    white-space: nowrap;
     color: var(--text);
   }
-  .wordmark span { display: block; }
-  .wordmark span:last-child {
-    text-align: right;
-    color: var(--accent-dark);
+  .wordmark .bracket { color: var(--bracket); }
+  .wordmark .plus { color: var(--accent-dark); }
+  .wordmark-sub {
+    margin: 0.6rem 0 1.5rem;
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-align: center;
+    color: var(--muted);
   }
   header p {
     font-size: 1.15rem;
@@ -97,9 +104,11 @@
 <body>
 <header>
   <h1 class="wordmark">
-    <span>Fatherhood</span>
-    <span>Together</span>
+    <span class="bracket" aria-hidden="true">[</span>
+    fatherhood <span class="plus">+</span> together
+    <span class="bracket" aria-hidden="true">]</span>
   </h1>
+  <p class="wordmark-sub">thursdays · 6:30 · room 311</p>
   <p>A newly forming group for dads of children birth through elementary school age, meeting Thursday evenings at Grace Community Church in North Liberty. You do not need to attend or be a member of Grace to join us.</p>
 </header>
 <main>
