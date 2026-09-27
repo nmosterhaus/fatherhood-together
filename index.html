@@ -96,6 +96,33 @@
   a {
     color: var(--accent-dark);
   }
+  .schedule {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+  }
+  .schedule th {
+    text-align: left;
+    font-weight: 400;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 0.72rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--accent);
+  }
+  .schedule td {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--accent);
+  }
+  .schedule tr:last-child td {
+    border-bottom: none;
+  }
+  .schedule td:first-child {
+    white-space: nowrap;
+    padding-right: 1rem;
+    color: var(--accent-dark);
+  }
 </style>
 </head>
 <body>
@@ -117,12 +144,25 @@
     <div class="details">
       <dl>
         <dt>When</dt>
-        <dd>Thursdays, 6:30&ndash;7:30 p.m., starting September 24</dd>
+        <dd>Thursdays, 6:30&ndash;7:30 p.m.</dd>
         <dt>Where</dt>
         <dd>Grace Community Church, North Liberty &mdash; Classroom 311</dd>
         <dt>Who</dt>
         <dd>Dads of children birth through elementary school age</dd>
       </dl>
+    </div>
+    <div class="details">
+      <table class="schedule">
+        <thead>
+          <tr><th>Date</th><th>Episode</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Oct 1</td><td>Ep 1 &mdash; Vices + Hiding</td></tr>
+          <tr><td>Oct 8</td><td>Ep 2 &mdash; Covenant Friendship</td></tr>
+          <tr><td>Oct 15</td><td>Ep 3 &mdash; Spiritual Disciplines</td></tr>
+          <tr><td>Oct 22</td><td>Ep 4 &mdash; Physical Disciplines</td></tr>
+        </tbody>
+      </table>
     </div>
   </section>
   <section>
